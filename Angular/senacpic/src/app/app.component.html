@@ -9,7 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <app-foto></app-foto>
+        <div class="row">
+          <!-- inbound property -->
+          <app-foto 
+            *ngFor="let f of fotos"
+            [url]="f.url" 
+            [titulo]="f.titulo" 
+            [descricao]="f.descricao">
+          </app-foto>
+        </div>
     </div>
   </body>
 </html>
