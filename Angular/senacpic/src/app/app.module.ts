@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import{ FotoModule } from './foto/foto.module';
-
+import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
 
 @NgModule({
   // responsavel por importar componentes
   declarations: [
-    AppComponent
+    AppComponent,
+    FotoRegistroComponent
   ],
   // responsavel por importar modulos
   imports: [
