@@ -9,15 +9,9 @@
   </head>
   <body>
     <div class="container">
+        <p><a routerLink="/">Home</a><br><a routerLink="/form">Formulario</a><br>Lista</p>
         <div class="row">
-          <!-- inbound property -->
-          <app-foto 
-            *ngFor="let f of fotos"
-            [url]="f.url" 
-            [titulo]="f.titulo" 
-            [alternativo]="f.alt" 
-            [descricao]="f.descricao">
-          </app-foto>
+          <router-outlet></router-outlet>
         </div>
     </div>
   </body>

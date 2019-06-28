@@ -5,7 +5,7 @@
         "titulo": "Windranger",
         "alt": "Windrager Lyralei",
         "url": "https://gamepedia.cursecdn.com/dota2_gamepedia/6/60/Windranger_icon.png?version=21ac0a7a66f625fc8bb20bf511e2fcee",
-        "descricao": "As florestas ao oeste guardam bem os seus segredos. Um deles é Lyralei, arqueira mestra dos bosques e afilhada favorita do vento. Conhecida nos dias de hoje como Windranger, a família de Lyralei foi morta em uma tempestade na noite do seu nascimento – a sua casa destruída pelo temporal e tudo que havia dentro espalhado ao vento."
+        "desc": "As florestas ao oeste guardam bem os seus segredos. Um deles é Lyralei, arqueira mestra dos bosques e afilhada favorita do vento. Conhecida nos dias de hoje como Windranger, a família de Lyralei foi morta em uma tempestade na noite do seu nascimento – a sua casa destruída pelo temporal e tudo que havia dentro espalhado ao vento."
     },
     {
         "id": 2,
@@ -29,5 +29,13 @@
         "descricao": "Como ela havia se reduzido a isto? Ela fora o Flagelo das Planícies, uma impiedosa líder de homens e feras, capaz de semear o terror por onde quer que se aventurasse."
     }
   ],
-  "usuarios": []
+  "usuarios": [],
+  "comentarios": [
+    {
+        "id": 1,
+        "materia-id": 1,
+        "nome": "Luis",
+        "comentario": "dashdasudhaushdasdhuasduashduh"
+    }
+  ]
 }

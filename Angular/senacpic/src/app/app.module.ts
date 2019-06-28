@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 import{ FotoModule } from './foto/foto.module';
 import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
+import { AppRoutingModule } from './foto/app.routing.module';
 
 @NgModule({
   // responsavel por importar componentes
@@ -15,7 +16,8 @@ import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
   // responsavel por importar modulos
   imports: [
     BrowserModule,
-    FotoModule
+    FotoModule,
+    AppRoutingModule
   ],
   // responsavel por importar services
   providers: [],

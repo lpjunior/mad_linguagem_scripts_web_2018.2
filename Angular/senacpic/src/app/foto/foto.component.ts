@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Foto } from './foto.model';
 
 @Component({
     selector: 'app-foto',
