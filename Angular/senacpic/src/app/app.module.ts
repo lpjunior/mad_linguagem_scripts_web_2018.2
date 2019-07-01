@@ -8,6 +8,7 @@ import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
 import { AppRoutingModule } from './foto/app.routing.module';
 import { FotoListComponent } from './foto-list/foto-list.component';
 import { HomeComponent } from './home/home.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 @NgModule({
   // responsavel por importar componentes
@@ -15,7 +16,8 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     FotoRegistroComponent,
     FotoListComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundPageComponent
   ],
   // responsavel por importar modulos
   imports: [

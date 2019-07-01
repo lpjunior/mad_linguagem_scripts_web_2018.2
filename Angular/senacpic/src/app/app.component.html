@@ -8,7 +8,8 @@
     <title>Senac Pic</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
+        <!-- NavBar -->
         <header>
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#" routerLink="/">SENACPIC</a>
@@ -35,11 +36,13 @@
             </div>
           </nav>
         </header>
-        <div class="row">
-          <div class="offset-1 mt-3 mb-3 d-flex justify-content-center">
-            <router-outlet></router-outlet>
-          </div>
+        <!-- #/NavBar -->
+
+        <!-- Conteúdo -->
+        <div class="offset-1 mt-3 mb-3 justify-content-center">
+          <router-outlet></router-outlet>
         </div>
+        <!-- #/Conteúdo -->
     </div>
   </body>
 </html>
