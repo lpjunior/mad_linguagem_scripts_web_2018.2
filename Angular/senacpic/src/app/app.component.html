@@ -30,8 +30,10 @@
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar foto(s)" aria-label="Search">
-                <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+                <!-- Binding Event -->
+                <input (keyup)="valorBusca = $event.target.value" class="form-control mr-sm-2" type="search" placeholder="Buscar foto(s)" aria-label="Search">
+                <!-- Call Event -->
+                <button (click)="msgNoConsole()" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Buscar</button>
               </form>
             </div>
           </nav>
@@ -40,6 +42,7 @@
 
         <!-- Conteúdo -->
         <div class="offset-1 mt-3 mb-3 justify-content-center">
+          {{ valorBusca }}
           <router-outlet></router-outlet>
         </div>
         <!-- #/Conteúdo -->
