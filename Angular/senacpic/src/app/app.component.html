@@ -9,9 +9,36 @@
   </head>
   <body>
     <div class="container">
-        <p><a routerLink="/">Home</a><br><a routerLink="/form">Formulario</a><br>Lista</p>
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#" routerLink="/">SENACPIC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink="/form">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" routerLink="/list">Lista</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar foto(s)" aria-label="Search">
+                <button class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="submit">Buscar</button>
+              </form>
+            </div>
+          </nav>
+        </header>
         <div class="row">
-          <router-outlet></router-outlet>
+          <div class="offset-1 mt-3 mb-3 d-flex justify-content-center">
+            <router-outlet></router-outlet>
+          </div>
         </div>
     </div>
   </body>

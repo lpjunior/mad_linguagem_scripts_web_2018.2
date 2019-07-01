@@ -7,13 +7,15 @@ import{ FotoModule } from './foto/foto.module';
 import { FotoRegistroComponent } from './foto-registro/foto-registro.component';
 import { AppRoutingModule } from './foto/app.routing.module';
 import { FotoListComponent } from './foto-list/foto-list.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   // responsavel por importar componentes
   declarations: [
     AppComponent,
     FotoRegistroComponent,
-    FotoListComponent
+    FotoListComponent,
+    HomeComponent
   ],
   // responsavel por importar modulos
   imports: [

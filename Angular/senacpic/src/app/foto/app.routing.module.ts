@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FotoRegistroComponent } from '../foto-registro/foto-registro.component';
+import { FotoListComponent } from '../foto-list/foto-list.component';
+import { HomeComponent } from '../home/home.component';
 
 const routes:Routes = [
-    { path: 'form', component: FotoRegistroComponent }
+    { path: '', component: HomeComponent },
+    { path: 'form', component: FotoRegistroComponent },
+    { path: 'list', component: FotoListComponent }
 ];
 
 @NgModule({

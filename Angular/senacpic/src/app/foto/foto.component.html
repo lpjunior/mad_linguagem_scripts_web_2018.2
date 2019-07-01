@@ -1,11 +1,9 @@
-        <div class="col-4">
-            <div class="card">
-                <div class="card-body">
-                    <img [src]="url" [alt]="alternativo" class="rounded img-fluid mb-2" alt="...">
-                    <h6 class="card-subtitle mb-2 text-muted">{{ titulo }}</h6>
-                    <p class="card-text">{{ descricao }}</p>
-                    <a href="#" class="card-link">Curtir</a>
-                    <input type="checkbox" class="card-link"> Seguir
-                </div>
-            </div>
+<div class="card mb-4 box-shadow">
+        <div class="card-body">
+            <img [src]="url" [alt]="alternativo" class="rounded img-fluid mb-2">
+            <ul class="list-unstyled mt-3 mb-4">
+            </ul>
+            <button type="button" class="btn btn-lg btn-outline-primary mr-3">Curtir</button>
+            <button type="button" class="btn btn-lg btn-outline-dark">Follow</button>
         </div>
+    </div>
