@@ -33,8 +33,13 @@
                 <!-- Binding Event -->
                 <input (keyup)="valorBusca = $event.target.value" class="form-control mr-sm-2" type="search" placeholder="Buscar foto(s)" aria-label="Search">
                 <!-- Call Event -->
-                <button (click)="msgNoConsole()" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Buscar</button>
+                <button (click)="msgNoConsole()" class="btn btn-warning btn-outline-secondary my-2 my-sm-0" type="button">Buscar</button>
               </form>
+              <ul class="navbar-nav ml-auto">
+                <li> 
+                  <button data-toggle="modal" data-target="#loginModal" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Login</button>
+                </li>
+              </ul>
             </div>
           </nav>
         </header>
