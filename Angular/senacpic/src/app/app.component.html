@@ -37,7 +37,7 @@
               </form>
               <ul class="navbar-nav ml-auto">
                 <li> 
-                  <button data-toggle="modal" data-target="#loginModal" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Login</button>
+                  <button routerLink="/login" class="btn btn-dark btn-outline-warning my-2 my-sm-0" type="button">Login</button>
                 </li>
               </ul>
             </div>
@@ -46,7 +46,7 @@
         <!-- #/NavBar -->
 
         <!-- Conteúdo -->
-        <div class="offset-1 mt-3 mb-3 justify-content-center">
+        <div class="mt-3 mb-3 justify-content-center">
           {{ valorBusca }}
           <router-outlet></router-outlet>
         </div>
