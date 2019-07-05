@@ -5,12 +5,14 @@ import { FotoListComponent } from './foto-list/foto-list.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 import { SignInComponent } from './home/signin/signin.component';
+import { SignupComponent } from './home/signup/signup.component';
 
 const routes:Routes = [
     { path: '', component: HomeComponent },
     { path: 'form', component: FotoRegistroComponent },
     { path: 'list', component: FotoListComponent },
-    { path: 'login', component: SignInComponent },
+    { path: 'user/login', component: SignInComponent },
+    { path: 'user/add', component: SignupComponent },
     { path: '**', component: NotFoundPageComponent }
 ];
 

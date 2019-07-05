@@ -1,0 +1,49 @@
+<style type="text/css">
+	.login-form {
+		width: 340px;
+    	margin: 50px auto;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+
+<div class="login-form">
+    <form [formGroup]="loginAddForm" (submit)="addLogin()">
+        <h2 class="text-center">Create Login</h2>       
+        <div class="form-group">
+            <input formControlName="fullname" type="text" class="form-control" placeholder="Nome completo" autofocus>
+            <small *ngIf="loginAddForm.get('fullname').errors?.required" class="text-danger d-block mt-2">Informe o nome completo</small>
+        </div>
+        <div class="form-group">
+            <input formControlName="email" type="email" class="form-control" placeholder="E-mail">
+            <small *ngIf="loginAddForm.get('email').errors?.required" class="text-danger d-block mt-2">Informe o email</small>
+        </div>
+        <div class="form-group">
+            <input formControlName="username" type="text" class="form-control" placeholder="Username">
+            <small *ngIf="loginAddForm.get('username').errors?.required" class="text-danger d-block mt-2">Informe o usuário</small>
+        </div>
+        <div class="form-group">
+            <input formControlName="password" type="password" class="form-control" placeholder="Password">
+            <small *ngIf="loginAddForm.get('password').errors?.required" class="text-danger d-block mt-2">Informe a senha</small>
+        </div>
+        <div class="form-group">
+            <button [disabled]="loginAddForm.invalid" type="submit" class="btn btn-dark btn-outline-warning btn-block">Create Login</button>
+        </div>       
+    </form>
+    <p class="text-center"><a href="/user/login" class="text-warning font-weight-bold font-italic">Já tem uma conta?</a></p>
+</div>
